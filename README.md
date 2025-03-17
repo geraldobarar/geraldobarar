@@ -1,7 +1,7 @@
 ### Hi there, my name is Geraldo and this is my GitHub profile! 👋
 
 - 👀 I’m interested in coding and learning new technologies
-- 🌱 I’m currently learning Java Scrip and Python
+- 🌱 I’m currently learning C#, .Net and Angular to become a Full Stack Developer
 - 👯 I’m looking forward to collaborate on projects related with Web Development
 - 📫 You can find me in my Instagram (@geraldobaranoski), LinkedIn (linkedin.com/in/geraldobaranoski/), and in my email: gbaranoskijr@gmail.com
 
