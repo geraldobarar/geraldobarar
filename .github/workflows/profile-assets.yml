@@ -1,0 +1,75 @@
+name: Update profile assets
+
+on:
+  schedule:
+    # Twice a day. The previous `* */12 * * *` fired every minute of hours
+    # 0 and 12 — 120 runs a day instead of 2.
+    - cron: "0 */12 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/generate-stats.mjs"
+      - ".github/workflows/profile-assets.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  snake:
+    name: Contribution snake
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Platane/snk@v3
+        id: snake-gif
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg?palette=github-light
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  stats:
+    name: Stat cards
+    runs-on: ubuntu-latest
+    # GH_STATS_TOKEN is a classic PAT (read:user + repo). GITHUB_TOKEN cannot
+    # be used here: its GraphQL `viewer` resolves to github-actions[bot].
+    env:
+      HAS_TOKEN: ${{ secrets.GH_STATS_TOKEN != '' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        if: env.HAS_TOKEN == 'true'
+        with:
+          node-version: 22
+
+      - name: Generate stat cards
+        if: env.HAS_TOKEN == 'true'
+        env:
+          GH_STATS_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
+        run: node scripts/generate-stats.mjs
+
+      - name: Commit if changed
+        if: env.HAS_TOKEN == 'true'
+        run: |
+          if [ -n "$(git status --porcelain assets)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add assets
+            git commit -m "chore: refresh stat cards"
+            git push
+          else
+            echo "Stat cards unchanged."
+          fi
+
+      - name: Warn when the token is missing
+        if: env.HAS_TOKEN != 'true'
+        run: |
+          echo "::warning::GH_STATS_TOKEN is not set — keeping the committed stat cards."

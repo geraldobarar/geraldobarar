@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="280" viewBox="0 0 860 280" role="img" aria-label="GitHub statistics for geraldobarar">
+  <style>text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }</style>
+  <rect x="0.5" y="0.5" width="859" height="279" rx="14" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="32" y="42" font-size="16" font-weight="600" fill="#1f2328">geraldobarar · GitHub activity</text>
+  <text x="828" y="42" text-anchor="end" font-size="11" fill="#59636e">388 PRs · 32 issues · 1 repos contributed to</text>
+  
+    <g transform="translate(32, 70)">
+      <rect width="186" height="78" rx="10" fill="#eaeef2" opacity="0.55"/>
+      <text x="16" y="30" font-size="24" font-weight="600" fill="#1f2328">1148</text>
+      <text x="16" y="48" font-size="11" font-weight="600" fill="#0969da" letter-spacing="0.4">CONTRIBUTIONS</text>
+      <text x="16" y="65" font-size="10.5" fill="#59636e">past 12 months</text>
+    </g>
+    <g transform="translate(232, 70)">
+      <rect width="186" height="78" rx="10" fill="#eaeef2" opacity="0.55"/>
+      <text x="16" y="30" font-size="24" font-weight="600" fill="#1f2328">711</text>
+      <text x="16" y="48" font-size="11" font-weight="600" fill="#0969da" letter-spacing="0.4">COMMITS</text>
+      <text x="16" y="65" font-size="10.5" fill="#59636e">past 12 months</text>
+    </g>
+    <g transform="translate(432, 70)">
+      <rect width="186" height="78" rx="10" fill="#eaeef2" opacity="0.55"/>
+      <text x="16" y="30" font-size="24" font-weight="600" fill="#1f2328">24</text>
+      <text x="16" y="48" font-size="11" font-weight="600" fill="#0969da" letter-spacing="0.4">REPOSITORIES</text>
+      <text x="16" y="65" font-size="10.5" fill="#59636e">public + private</text>
+    </g>
+    <g transform="translate(632, 70)">
+      <rect width="186" height="78" rx="10" fill="#eaeef2" opacity="0.55"/>
+      <text x="16" y="30" font-size="24" font-weight="600" fill="#1f2328">11</text>
+      <text x="16" y="48" font-size="11" font-weight="600" fill="#0969da" letter-spacing="0.4">LANGUAGES</text>
+      <text x="16" y="65" font-size="10.5" fill="#59636e">TypeScript leads</text>
+    </g>
+  <text x="32" y="176" font-size="11" font-weight="600" fill="#0969da" letter-spacing="0.4">MOST USED LANGUAGES</text>
+  <rect x="32.0" y="188" width="586.3" height="10" rx="5" fill="#3178c6"/>
+    <rect x="618.3" y="188" width="67.0" height="10" rx="0" fill="#f1e05a"/>
+    <rect x="685.2" y="188" width="43.7" height="10" rx="0" fill="#e34c26"/>
+    <rect x="728.9" y="188" width="38.5" height="10" rx="0" fill="#3572A5"/>
+    <rect x="767.4" y="188" width="24.5" height="10" rx="0" fill="#555555"/>
+    <rect x="791.9" y="188" width="22.4" height="10" rx="5" fill="#663399"/>
+  <g transform="translate(32, 222)">
+      <circle cx="5" cy="-4" r="5" fill="#3178c6"/>
+      <text x="17" y="0" font-size="12" fill="#1f2328">TypeScript</text>
+      <text x="97" y="0" font-size="12" fill="#59636e">73.7%</text>
+    </g>
+    <g transform="translate(302, 222)">
+      <circle cx="5" cy="-4" r="5" fill="#f1e05a"/>
+      <text x="17" y="0" font-size="12" fill="#1f2328">JavaScript</text>
+      <text x="97" y="0" font-size="12" fill="#59636e">8.4%</text>
+    </g>
+    <g transform="translate(572, 222)">
+      <circle cx="5" cy="-4" r="5" fill="#e34c26"/>
+      <text x="17" y="0" font-size="12" fill="#1f2328">HTML</text>
+      <text x="53.8" y="0" font-size="12" fill="#59636e">5.5%</text>
+    </g>
+    <g transform="translate(32, 242)">
+      <circle cx="5" cy="-4" r="5" fill="#3572A5"/>
+      <text x="17" y="0" font-size="12" fill="#1f2328">Python</text>
+      <text x="68.2" y="0" font-size="12" fill="#59636e">4.8%</text>
+    </g>
+    <g transform="translate(302, 242)">
+      <circle cx="5" cy="-4" r="5" fill="#555555"/>
+      <text x="17" y="0" font-size="12" fill="#1f2328">C</text>
+      <text x="32.2" y="0" font-size="12" fill="#59636e">3.1%</text>
+    </g>
+    <g transform="translate(572, 242)">
+      <circle cx="5" cy="-4" r="5" fill="#663399"/>
+      <text x="17" y="0" font-size="12" fill="#1f2328">CSS</text>
+      <text x="46.6" y="0" font-size="12" fill="#59636e">2.8%</text>
+    </g>
+</svg>
