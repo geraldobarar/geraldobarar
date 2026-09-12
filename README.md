@@ -26,7 +26,6 @@ Most of my recent work lives in private repositories. Here is what is inside the
 
 | Project | What it is | Stack |
 | :--- | :--- | :--- |
-| **Meeting Copilot** <sub>`private`</sub> | Desktop copilot that transcribes a meeting live on two separate channels — your mic and the system audio — and, on a hotkey, answers the last question you were asked from your own knowledge base, in a floating overlay. Audio never touches disk. | TypeScript · Deepgram `nova-3` · Claude (Haiku 4.5 / Sonnet 5) · realtime streaming |
 | **Centro Financeiro** <sub>`private`</sub> | Personal finance platform: entries by form, AI chat or WhatsApp; recurring bills; an investment portfolio with automatic quotes and dividends; AI-written weekly reports. Per-user data isolation via RLS. | Next.js 16 · React 19 · Supabase · Tailwind 4 design system · Vercel AI SDK + AI Gateway · Cron Jobs · Vitest |
 | **LegalLawAutomation** <sub>`private`</sub> | End-to-end case opening for a law firm, driven by one form submission: idempotent Drive folder hierarchy keyed by CPF, control and deadline spreadsheets, case summary and the legal documents for each practice area. In production, v25. | Google Apps Script (V8) · Drive / Sheets / Docs APIs |
 | **LexIO** <sub>`private`</sub> | Legal-tech assistant built around Gemini, with a React SPA front end and an Express service behind it. | React · Vite · Express · `@google/genai` |
