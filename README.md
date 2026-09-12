@@ -16,7 +16,7 @@
 ## What I do
 
 - **Ship production web apps in TypeScript.** Next.js (App Router) + React on the front, Supabase/Postgres with row-level security on the back, deployed on Vercel.
-- **Wire LLMs in as a product feature, not a demo.** Natural-language data entry, live transcription, generated reports — with streaming, token accounting and cost control built in.
+- **Wire LLMs in as a product feature, not a demo.** Natural-language data entry and generated reports — with streaming, token accounting and cost control built in.
 - **Automate real business processes.** A single form submit that opens an entire legal case: Drive hierarchy, control spreadsheets, deadlines and the drafted documents.
 - **Work below the framework line too.** C, data structures, binary persistence and indexing, plus Python for ML pipelines.
 
